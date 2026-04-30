@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "void":    { "value": "#010101", "role": "Primary background", "usage": "Page backgrounds, section fills" },
+    "magenta": { "value": "#D02AE0", "role": "Brand action color", "usage": "CTAs, primary buttons, logo mark, card accents" },
+    "cyan":    { "value": "#10DDE2", "role": "Systems & data color", "usage": "AI/automation badges, data points, secondary actions" }
+  },
+  "surface": {
+    "s0": "#0C0C0F",
+    "s1": "#131318",
+    "s2": "#1A1A21",
+    "s3": "#22222A",
+    "s4": "#2E2E38"
+  },
+  "text": {
+    "primary":   "#F0EFF5",
+    "secondary": "#A09FB0",
+    "muted":     "#55546A"
+  },
+  "magenta_tints": {
+    "100": "rgba(208,42,224,1.00)",
+    "70":  "rgba(208,42,224,0.70)",
+    "40":  "rgba(208,42,224,0.40)",
+    "20":  "rgba(208,42,224,0.20)",
+    "12":  "rgba(208,42,224,0.12)",
+    "06":  "rgba(208,42,224,0.06)"
+  },
+  "cyan_tints": {
+    "100": "rgba(16,221,226,1.00)",
+    "70":  "rgba(16,221,226,0.70)",
+    "40":  "rgba(16,221,226,0.40)",
+    "20":  "rgba(16,221,226,0.20)",
+    "10":  "rgba(16,221,226,0.10)",
+    "05":  "rgba(16,221,226,0.05)"
+  },
+  "semantic": {
+    "border_default":   "rgba(255,255,255,0.08)",
+    "border_accent_mg": "rgba(208,42,224,0.35)",
+    "border_accent_cy": "rgba(16,221,226,0.30)",
+    "glow_magenta":     "rgba(208,42,224,0.35)",
+    "glow_cyan":        "rgba(16,221,226,0.30)"
+  }
+}
