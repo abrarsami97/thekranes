@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Kranes — GTM & AI Automation Agency</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;1,300&family=Roboto:wght@700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -224,7 +224,7 @@ nav{
   background:var(--cyan);
 }
 .hero-headline{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:clamp(3.8rem,7.5vw,7.5rem);
   font-weight:800;
   line-height:.95;
@@ -301,7 +301,7 @@ nav{
   color:rgba(255,255,255,.4);
 }
 .metric-value{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:1.25rem;
   font-weight:700;
   color:white;
@@ -385,7 +385,7 @@ nav{
 .stat-box:hover::after{transform:scaleX(1)}
 .stat-box:hover{background:rgba(255,255,255,.02)}
 .stat-num{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:3rem;
   font-weight:800;
   line-height:1;
@@ -408,7 +408,7 @@ nav{
   margin-bottom:4rem;
 }
 .services-headline{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:clamp(2.5rem,4vw,4rem);
   font-weight:800;
   line-height:1.05;
@@ -453,7 +453,7 @@ nav{
   margin-bottom:1rem;
 }
 .service-title{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:1.4rem;
   font-weight:700;
   margin-bottom:1rem;
@@ -496,7 +496,7 @@ nav{
   margin-bottom:3.5rem;
 }
 .results-headline{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:clamp(2.2rem,3.5vw,3.5rem);
   font-weight:800;
   letter-spacing:-.02em;
@@ -534,7 +534,7 @@ nav{
   margin-bottom:.75rem;
 }
 .case-result{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:2.2rem;
   font-weight:800;
   margin-bottom:.25rem;
@@ -624,7 +624,7 @@ nav{
   margin-bottom:4rem;
 }
 .team-headline{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:clamp(2.2rem,3.5vw,3.5rem);
   font-weight:800;
   letter-spacing:-.02em;
@@ -668,7 +668,7 @@ nav{
   background:rgba(16,221,226,.05);
 }
 .team-name{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:1rem;
   font-weight:700;
   margin-bottom:.2rem;
@@ -719,7 +719,7 @@ nav{
   margin-bottom:2rem;
 }
 .cta-headline{
-  font-family:'Cormorant Garamond', serif;
+  font-family:'Roboto', sans-serif;
   font-size:clamp(2.8rem,5vw,5rem);
   font-weight:800;
   line-height:1;
@@ -747,12 +747,60 @@ nav{
 /* ── FOOTER ── */
 footer{
   border-top:1px solid var(--dimmest);
-  padding:3rem 4rem;
+  padding:6rem 4rem 3rem;
+  display:grid;
+  grid-template-columns:1fr 1.5fr;
+  gap:4rem;
+  align-items:start;
+}
+.footer-left p{
+  font-family:'Space Mono',monospace;
+  font-size:0.65rem;
+  color:rgba(255,255,255,0.4);
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  margin-bottom:2rem;
+}
+.footer-address{
+  font-family:'Figtree',sans-serif;
+  font-size:0.75rem;
+  color:rgba(255,255,255,0.3);
+  line-height:1.6;
+}
+.footer-right{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+}
+.footer-col-title{
+  font-family:'Space Mono',monospace;
+  font-size:0.6rem;
+  color:var(--mag);
+  margin-bottom:1.5rem;
+  text-transform:uppercase;
+  letter-spacing:0.15em;
+}
+.footer-col-links{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+}
+.footer-col-links a{
+  font-family:'Figtree',sans-serif;
+  font-size:0.8rem;
+  color:rgba(255,255,255,0.4);
+  text-decoration:none;
+  transition:color .2s;
+}
+.footer-col-links a:hover{color:white}
+.footer-bottom{
+  grid-column:1 / span 2;
+  border-top:1px solid rgba(255,255,255,0.05);
+  padding-top:2rem;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  flex-wrap:wrap;
-  gap:2rem;
 }
 .footer-logo{
   font-family:'Space Mono',monospace;
@@ -763,25 +811,54 @@ footer{
   text-decoration:none;
 }
 .footer-logo span{color:var(--mag)}
-.footer-links{
-  display:flex;gap:2rem;list-style:none;
-}
-.footer-links a{
-  font-family:'Space Mono',monospace;
-  font-size:.6rem;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.3);
-  text-decoration:none;
-  transition:color .2s;
-}
-.footer-links a:hover{color:white}
 .footer-copy{
   font-family:'Space Mono',monospace;
   font-size:.58rem;
   color:rgba(255,255,255,.18);
   letter-spacing:.1em;
   text-transform:uppercase;
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials-section{padding:6rem 4rem;border-top:1px solid var(--dimmest)}
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+  gap:1.5rem;
+}
+.testimonial-card{
+  background:rgba(255,255,255,.01);
+  border:1px solid rgba(255,255,255,.04);
+  padding:2.5rem;
+  transition:border-color .3s, background .3s;
+}
+.testimonial-card:hover{
+  border-color:rgba(16,221,226,.2);
+  background:rgba(255,255,255,.02);
+}
+.testimonial-quote{
+  font-family:'Figtree',sans-serif;
+  font-size:1.05rem;
+  line-height:1.7;
+  color:rgba(255,255,255,.8);
+  margin-bottom:2rem;
+  font-style:italic;
+}
+.testimonial-author{
+  font-family:'Space Mono',monospace;
+  font-size:.7rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--cyan);
+}
+.testimonial-author span{
+  display:block;
+  color:rgba(255,255,255,.3);
+  margin-top:.3rem;
+  text-transform:none;
+  font-family:'Figtree',sans-serif;
+  font-size:.75rem;
+  letter-spacing:0;
 }
 </style>
 </head>
@@ -818,31 +895,28 @@ footer{
     </a>
     <div class="nav-pill">
       <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
       </ul>
     </div>
-    <button class="nav-cta">Book a Call →</button>
+    <a href="https://calendly.com/sami97abrar/coffee-with-the-kranes" class="nav-cta" style="text-decoration:none;">Work with us →</a>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-left">
-        <div class="hero-badge">GTM &amp; AI Automation Agency</div>
+        <div class="hero-badge">Engineering-First Growth Engine</div>
         <h1 class="hero-headline">
-          We Wire<br>
-          Startups<br>
-          For <span class="accent">Growth.</span>
+          We build<br>
+          Growth Systems<br>
+          that actually <span class="accent">WORK</span>
         </h1>
         <p class="hero-sub">
-          The Kranes builds GTM systems, cold outreach engines, and AI automation stacks for early-stage SaaS startups — so you stop guessing and start compounding.
+          We operate as an engineering-first growth engine behind successful SaaS stories.
         </p>
         <div class="hero-ctas">
-          <a href="#work" class="btn-primary">See Our Work →</a>
-          <a href="#contact" class="btn-ghost">Book a Free GTM Audit</a>
+          <a href="https://calendly.com/sami97abrar/coffee-with-the-kranes" class="btn-primary">Get your Free Growth Strategy →</a>
         </div>
       </div>
       <div class="hero-card">
@@ -904,7 +978,7 @@ footer{
   <!-- STATS -->
   <div class="section deco-wrap" id="about">
     <img class="deco-img moon-bg" src="assets/moon.png" alt="">
-    <div class="section-label">What We've Shipped</div>
+    <div class="section-label">About Us · Our Impact</div>
     <div class="stats-grid">
       <div class="stat-box">
         <div class="stat-num">250<span class="unit">K</span></div>
@@ -938,57 +1012,51 @@ footer{
     <img class="deco-img cloud-tr" src="assets/cloud.png" alt="">
     <div class="section-label">Capabilities</div>
     <div class="services-header">
-      <h2 class="services-headline">One Agency.<br>Full Stack GTM.</h2>
-      <p class="services-sub">Most agencies hand you a deck.<br>We hand you a system.</p>
+      <h2 class="services-headline">What we do</h2>
+      <p class="services-sub">We don't just hand you a deck. We hand you a system that scales.</p>
     </div>
-    <div class="services-grid">
+    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
       <div class="service-card">
         <div class="service-num">01</div>
-        <div class="service-badge">Strategy</div>
-        <h3 class="service-title">GTM Strategy</h3>
-        <p class="service-desc">You don't have a marketing problem. You have a positioning problem. We define your ICP, sharpen your value prop, and build a launch-ready playbook.</p>
-        <ul class="service-list">
-          <li>ICP definition &amp; segmentation</li>
-          <li>Positioning &amp; messaging framework</li>
-          <li>Product launch roadmap</li>
-          <li>Competitive differentiation</li>
-        </ul>
+        <div class="service-badge">GTM</div>
+        <h3 class="service-title">Full GTM Plan</h3>
+        <p class="service-desc">A comprehensive strategic roadmap designed to take you from 0 to 10k users with precision and speed.</p>
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
-        <div class="service-badge">Growth · Outbound</div>
-        <h3 class="service-title">Cold Outreach Systems</h3>
-        <p class="service-desc">Inboxes are noisy. Ours get replies. We build multi-channel outbound systems engineered for B2B SaaS reply rates that actually move pipeline.</p>
-        <ul class="service-list">
-          <li>Lead list building &amp; enrichment</li>
-          <li>Cold email copywriting &amp; sequencing</li>
-          <li>LinkedIn outreach automation</li>
-          <li>A/B testing &amp; iteration cadence</li>
-        </ul>
+        <div class="service-badge">AI · Automation</div>
+        <h3 class="service-title">AI Systems</h3>
+        <p class="service-desc">Custom AI-driven workflows and systems that your team can actually use to eliminate manual bottlenecks.</p>
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
-        <div class="service-badge">AI · Automation</div>
-        <h3 class="service-title">AI Workflow Architecture</h3>
-        <p class="service-desc">Your team shouldn't do what software can. We design and deploy n8n, Make, and Supabase-backed automation systems that eliminate manual ops.</p>
-        <ul class="service-list">
-          <li>n8n &amp; Make workflow design</li>
-          <li>CRM automation &amp; lead routing</li>
-          <li>AI-powered outreach pipelines</li>
-          <li>Supabase backend engineering</li>
-        </ul>
+        <div class="service-badge">SaaS</div>
+        <h3 class="service-title">SaaS Marketing</h3>
+        <p class="service-desc">A-to-Z full-stack marketing specifically engineered for the unique challenges of B2B SaaS growth.</p>
       </div>
       <div class="service-card">
         <div class="service-num">04</div>
-        <div class="service-badge">Growth · CRO</div>
-        <h3 class="service-title">Growth Marketing &amp; CRO</h3>
-        <p class="service-desc">We treat your funnel like a product — and ship improvements weekly. Structured experiments across your funnel to find what compounds.</p>
-        <ul class="service-list">
-          <li>Funnel audit &amp; optimization</li>
-          <li>Landing page messaging &amp; CRO</li>
-          <li>Email lifecycle campaigns</li>
-          <li>SEO-aligned content strategy</li>
-        </ul>
+        <div class="service-badge">Mobile</div>
+        <h3 class="service-title">App Marketing</h3>
+        <p class="service-desc">Full-cycle mobile app marketing strategies focused on user acquisition, retention, and scaling.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-badge">Performance</div>
+        <h3 class="service-title">SEO / AEO / PPC</h3>
+        <p class="service-desc">Data-backed search and paid media strategies that capture intent and convert at every stage of the funnel.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-badge">Content</div>
+        <h3 class="service-title">Product Demo Videos</h3>
+        <p class="service-desc">High-fidelity product demos that explain your value proposition in seconds, not minutes.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <div class="service-badge">Media</div>
+        <h3 class="service-title">Featured Reviews</h3>
+        <p class="service-desc">Authentic featured reviews across our dedicated channels to build immediate social proof and credibility.</p>
       </div>
     </div>
   </div>
@@ -1089,6 +1157,29 @@ footer{
     </div>
   </div>
 
+  <!-- TESTIMONIALS -->
+  <div class="section testimonials-section" id="testimonials">
+    <div class="section-label">What our clients say</div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"Abrar has been one of the reasons we could leverage content-led growth, taking us from 0 to 250k users."</div>
+        <div class="testimonial-author">Mizanur Rahman <span>Investor & Founder @ Dorik AI</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"Guns. They are absolute guns."</div>
+        <div class="testimonial-author">Jean-Patrick Bisson <span>Investor & Founder @ Truely.com, Repocket.com</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"Abrar and Karan helped Agencyhandy during its early days. They are growth machines."</div>
+        <div class="testimonial-author">Rashik Haque <span>Investor & Founder @ Agencyhandy & Head Gear</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"Trust and reliability are my main requirements. These guys have both."</div>
+        <div class="testimonial-author">Roy Ganor <span>Investor & Founder @ Nestbox, Orda</span></div>
+      </div>
+    </div>
+  </div>
+
   <!-- CTA -->
   <section class="cta-section" id="contact">
     <div class="cta-inner">
@@ -1096,7 +1187,7 @@ footer{
       <h2 class="cta-headline">Your GTM System<br>Is One Call Away.</h2>
       <p class="cta-sub">Book a free 30-minute GTM audit. We'll look at your positioning, funnel, and outreach — and tell you exactly where your growth is leaking.</p>
       <div class="cta-buttons">
-        <a href="#" class="btn-primary" style="font-size:.75rem;padding:1rem 2.25rem">Book Free GTM Audit →</a>
+        <a href="https://calendly.com/sami97abrar/coffee-with-the-kranes" class="btn-primary" style="font-size:.75rem;padding:1rem 2.25rem">Get your Free Growth Strategy →</a>
         <span class="cta-divider">or</span>
         <a href="mailto:hello@thekranes.com" class="btn-ghost">hello@thekranes.com</a>
       </div>
@@ -1105,20 +1196,43 @@ footer{
 
   <!-- FOOTER -->
   <footer>
-    <a class="footer-logo" href="#" style="font-size:0;line-height:0;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" fill="none" height="20" style="display:block;">
-        <text x="0" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#F0EFF5">THE </text>
-        <text x="72" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#D02AE0">KR</text>
-        <text x="114" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#F0EFF5">ANES</text>
-      </svg>
-    </a>
-    <ul class="footer-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="footer-copy">© 2026 The Kranes · Built with Precision.</div>
+    <div class="footer-left">
+      <a class="footer-logo" href="#" style="font-size:0;line-height:0; display: block; margin-bottom: 1.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" fill="none" height="20" style="display:block;">
+          <text x="0" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#F0EFF5">THE </text>
+          <text x="72" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#D02AE0">KR</text>
+          <text x="114" y="26" font-family="'Space Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.12em" fill="#F0EFF5">ANES</text>
+        </svg>
+      </a>
+      <p>Solving Marketing Problems since 2020</p>
+      <div class="footer-address">
+        151 Chin Swee Road #02-24,<br>
+        Manhattan House, Singapore 169876
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-col">
+        <div class="footer-col-title">Other Services</div>
+        <ul class="footer-col-links">
+          <li><a href="#">GTM Strategies</a></li>
+          <li><a href="#">Media Buying</a></li>
+          <li><a href="#">SaaS Launch Videos</a></li>
+          <li><a href="#">Podcast Growth</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Connect</div>
+        <ul class="footer-col-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 The Kranes. All rights reserved.</div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 0.55rem; color: rgba(255,255,255,0.15); text-transform: uppercase; letter-spacing: 0.1em;">Built with Precision</div>
+    </div>
   </footer>
 
 </div><!-- /#content -->
